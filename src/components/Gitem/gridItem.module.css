@@ -1,0 +1,30 @@
+.main{
+    padding: 15px;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img {
+    height: 30px;
+}
+.title{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+.info{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}

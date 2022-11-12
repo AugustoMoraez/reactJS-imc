@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+.title{
+    padding: 10px;
+    background-color: royalblue;
+    margin-top: 40px;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+.left_side{
+    padding: 20px;
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_side h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.left_side p {
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.left_side input{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 5px;
+    outline: none;
+}
+
+.left_side button{
+    border: 0;
+    padding: 10px;
+    background-color: royalblue;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+}
+.left_side button:hover{
+    background-color: rgb(92, 132, 255);
+    cursor: pointer;
+}
+.left_side button:disabled{
+    background-color: rgb(150, 172, 238);
+    cursor: default;
+}
+.right_side{
+    padding: 20px;
+    margin-left: 40px;
+    flex: 1;
+    display: flex;
+}
+.grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.right_big{
+    flex: 1;
+    
+}
+.i {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: -25px ;
+    margin-top: 8%;
+    cursor: pointer;
+}
+.i:hover{
+    background-color: rgb(92, 132, 255);
+}
+.i:disabled{
+    background-color: rgb(92, 132, 255);
+}
+@media (max-width:700px){
+    .title{
+        margin: 10px 10px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .left_side{
+        margin: auto;
+    }
+    .right_side{
+        margin: auto;
+        padding: 10px;
+    }
+}
+@media (max-width:400px) {
+    .title{
+        margin: 10px 10px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .left_side{
+        margin: auto;
+    }
+    .right_side{
+        margin: auto;
+        padding: 10px;
+    }
+    .i{
+        margin-top: 17%;
+    }
+}
